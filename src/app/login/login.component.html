@@ -1,0 +1,13 @@
+<p>
+  login works!
+</p>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/admin">Admin</a>
+</nav>
+
+<ul *ngFor="let data of array">
+  <li>{{data.name}} {{data.age}} {{data.size}}</li>
+</ul>
+
+<input type="text" [(ngModel)]="inp" (change)="changefuntions($event)"/>
